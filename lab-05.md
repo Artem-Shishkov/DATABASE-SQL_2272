@@ -100,7 +100,7 @@ WHERE ticket_id = 30001;
 DELETE FROM shishkov_02272.ticket
 WHERE ticket_id = 30001;
 ```
-* Каскадное удаление одной строки из company -> удаление всех строк с таким же company_id во flight:
+* Каскадное удаление одной строки из company → удаление всех строк с таким же company_id во flight:
 ```sql
 DELETE FROM shishkov_02272.company
 WHERE company_id = 5507;
@@ -110,4 +110,5 @@ WHERE company_id = 5507;
 SELECT *
 FROM shishkov_02272.audit_log
 ORDER BY operation_time DESC;
+
 ```
