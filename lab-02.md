@@ -1,7 +1,7 @@
 # Лабораторная работа 2. Инсталляция БД на сервере
 ## Цель: Практическое развертывание базы данных и работа с SQL.
 ## class
-```
+```sql
 CREATE TABLE IF NOT EXISTS shishkov_02272.class
 (
     class_id integer NOT NULL DEFAULT nextval('shishkov_02272.class_class_id_seq'::regclass),
@@ -16,7 +16,7 @@ ALTER TABLE IF EXISTS shishkov_02272.class
     OWNER to student;
 ```
 ## company
-```
+```sql
 CREATE TABLE IF NOT EXISTS shishkov_02272.company
 (
     company_id integer NOT NULL DEFAULT nextval('shishkov_02272.company_company_id_seq'::regclass),
@@ -30,7 +30,7 @@ ALTER TABLE IF EXISTS shishkov_02272.company
     OWNER to student;
 ```
 ## flight
-```
+```sql
 CREATE TABLE IF NOT EXISTS shishkov_02272.flight
 (
     flight_id integer NOT NULL DEFAULT nextval('shishkov_02272.flight_flight_id_seq'::regclass),
@@ -51,7 +51,7 @@ ALTER TABLE IF EXISTS shishkov_02272.flight
     OWNER to student;
 ```
 ## passenger
-```
+```sql
 CREATE TABLE IF NOT EXISTS shishkov_02272.passenger
 (
     passenger_id integer NOT NULL DEFAULT nextval('shishkov_02272.passenger_passenger_id_seq'::regclass),
@@ -67,7 +67,7 @@ ALTER TABLE IF EXISTS shishkov_02272.passenger
     OWNER to student;
 ```
 ## ticket
-```
+```sql
 CREATE TABLE IF NOT EXISTS shishkov_02272.ticket
 (
     ticket_id integer NOT NULL DEFAULT nextval('shishkov_02272.ticket_ticket_id_seq'::regclass),
@@ -93,4 +93,5 @@ TABLESPACE pg_default;
 
 ALTER TABLE IF EXISTS shishkov_02272.ticket
     OWNER to student;
+
 ```
